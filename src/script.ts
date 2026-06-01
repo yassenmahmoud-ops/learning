@@ -239,16 +239,16 @@ function renderRows(items: Product[], emptyText: string): void {
     .map(
       (item, index) => `
         <tr>
-          <td>${index + 1}</td>
-          <td>${escapeHTML(item.title)}</td>
-          <td>${escapeHTML(item.price)}</td>
-          <td>${escapeHTML(item.taxes)}</td>
-          <td>${escapeHTML(item.ads)}</td>
-          <td>${escapeHTML(item.discount)}</td>
-          <td>${escapeHTML(item.total)}</td>
-          <td>${escapeHTML(item.category)}</td>
-          <td><button class="update" type="button" data-action="update" data-index="${index}">update</button></td>
-          <td><button class="delete" type="button" data-action="delete" data-index="${index}">delete</button></td>
+          <td data-label="id">${index + 1}</td>
+          <td data-label="title">${escapeHTML(item.title)}</td>
+          <td data-label="price">${escapeHTML(item.price)}</td>
+          <td data-label="taxes">${escapeHTML(item.taxes)}</td>
+          <td data-label="ads">${escapeHTML(item.ads)}</td>
+          <td data-label="discount">${escapeHTML(item.discount)}</td>
+          <td data-label="total">${escapeHTML(item.total)}</td>
+          <td data-label="category">${escapeHTML(item.category)}</td>
+          <td data-label="update"><button class="update" type="button" data-action="update" data-index="${index}">update</button></td>
+          <td data-label="delete"><button class="delete" type="button" data-action="delete" data-index="${index}">delete</button></td>
         </tr>
       `,
     )
