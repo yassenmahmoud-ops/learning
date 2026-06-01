@@ -1,6 +1,6 @@
 {
   "scripts": {
-    "build": "tsc",
+    "build": "tsc && node scripts/build.mjs",
     "watch": "tsc --watch"
   },
   "dependencies": {
