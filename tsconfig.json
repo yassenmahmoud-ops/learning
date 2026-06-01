@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "ES2017",
-    "module": "None",
+    "module": "ES6",
     "lib": ["ES2017", "DOM"],
     "rootDir": "src",
     "outDir": "js",
